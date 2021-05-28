@@ -105,7 +105,7 @@
                     <span v-else>
                         <li class="nav-item dropdown justify-content-left mt-2">
                             <a id="navbarDropdown" class="nav-link" href="#" data-toggle="dropdown">
-                                <img class="h-8 w-8 rounded-full" :src="$page.props.user.profile_photo_url"
+                                <img class="h-8 w-8 rounded-full" :src="$pag.props.asset + $page.props.user.profile_photo_path"
                                     :alt=" $page.props.user.name " />
                             </a>
                             <div class="dropdown-menu dropdown-menu-left px-2 text-right mt-2">
