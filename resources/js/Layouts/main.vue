@@ -194,7 +194,7 @@
                 axios.post(route('readNot'));
             }
         },
-        created(){
+        mounted(){
             var self=this;
             if(this.$page.props.user){
             Echo.private(`App.Models.User.${this.$page.props.user.id}`).notification((notification)=>{
