@@ -15,7 +15,7 @@ class LikeController extends Controller
 {
     public function like(Request $request){
         $user=User::find($request->user_id);
-       auth()->user()->notify(new LikeNotification(auth()->user(),Video::find($request->video_id)));
+       auth()->user->notify(new LikeNotification(auth()->user(),Video::find($request->video_id)));
        
         $alertLogin="";
         if(Auth::check()){
