@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Auth;
 class LikeController extends Controller
 {
     public function like(Request $request){
-        return $request;
+        
         $user=User::find($request->user_id);
        auth()->user()->notify(new LikeNotification(auth()->user(),Video::find($request->video_id)));
        
